@@ -44,7 +44,7 @@ def imageInput(src):
         imgpath = glob.glob('data/images/test/*')
         imgsel = st.slider('Select random images from test set.', min_value=1, max_value=len(imgpath), step=1) 
         image_file = imgpath[imgsel-1]
-        submit = st.button("Predict Hairstyle type")
+        submit = st.button("Segment the Heart Image")
         col1, col2 = st.columns(2)
         with col1:
             img = Image.open(image_file)
