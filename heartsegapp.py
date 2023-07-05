@@ -17,7 +17,7 @@ def imageInput(src):
         if image_file is not None:
             img = Image.open(image_file)
             with col1:
-                st.image(img, caption='Uploaded Hairstyle Image', use_column_width=True)
+                st.image(img, caption='Uploaded Heart Image', use_column_width=True)
             ts = datetime.timestamp(datetime.now())
             imgpath = os.path.join('data/uploads', str(ts)+image_file.name)
             outputpath = os.path.join('data/outputs', os.path.basename(imgpath))
@@ -37,7 +37,7 @@ def imageInput(src):
             
             img_ = Image.open(outputpath)
             with col2:
-                st.image(img_, caption='AI Hairstyle Recommendation', use_column_width=True)
+                st.image(img_, caption='AI Segmented Heart', use_column_width=True)
 
     elif src == 'From sample Images': 
         # Image selector slider
@@ -60,7 +60,7 @@ def imageInput(src):
                     im_base64.save(os.path.join('data/outputs', os.path.basename(image_file)))
                 #--Display predicton
                     img_ = Image.open(os.path.join('data/outputs', os.path.basename(image_file)))
-                    st.image(img_, caption='AI Hairstyle Recommendation')
+                    st.image(img_, caption='AI segmented Heart Image')
 
 def main():
     
