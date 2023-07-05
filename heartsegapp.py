@@ -33,7 +33,6 @@ def imageInput(src):
                 im_base64.save(outputpath)
 
             #--Display predicton
-            
             img_ = Image.open(outputpath)
             with col2:
                 st.image(img_, caption='AI Segmented Heart', use_column_width=True)
