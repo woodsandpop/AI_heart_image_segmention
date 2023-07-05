@@ -35,7 +35,7 @@ def imageInput(src):
             #--Display predicton
             img_ = Image.open(outputpath)
             with col2:
-                st.image(img_, caption='AI Segmented Heart', use_column_width=True)
+                st.image(img_, caption='AI Segmented Heart Image', use_column_width=True)
 
     elif src == 'From sample Images': 
         # Image selector slider
@@ -66,7 +66,7 @@ def main():
     st.title("AI Heart Image Segmentation")
     st.header("👈🏽 Select the Image Source options")
     st.sidebar.title('⚙️Options')
-    src = st.sidebar.radio("Select input source.", ['From sample Images', 'Upload your own  Image'])
+    src = st.sidebar.radio("Select input source.", ['From sample Images', 'Upload your own Image'])
     imageInput(src)
    
 if __name__ == '__main__':
