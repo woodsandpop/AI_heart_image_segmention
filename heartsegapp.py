@@ -12,7 +12,7 @@ import time
 def imageInput(src):
     
     if src == 'Upload your own Image':
-        image_file = st.file_uploader("Upload An Image", type=['png', 'jpeg', 'jpg'])
+        image_file = st.file_uploader("Upload an Heart Image", type=['png', 'jpeg', 'jpg'])
         col1, col2 = st.columns(2)
         if image_file is not None:
             img = Image.open(image_file)
