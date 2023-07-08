@@ -63,7 +63,7 @@ def imageInput(src):
 def main():
     
     st.image("logo.jpg", width = 500)
-    st.title("3D Heart MRI Scan Image Segmentation")
+    st.title("3D Heart MRI Image Segmentation")
     st.header("👈🏽 Select the Image Source options")
     st.sidebar.title('⚙️Options')
     src = st.sidebar.radio("Select input source.", ['From sample Images', 'Upload your own Image'])
