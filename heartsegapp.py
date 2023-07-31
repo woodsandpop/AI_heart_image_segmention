@@ -1,4 +1,5 @@
 import streamlit as st
+from ultralytics import YOLO
 import torch
 import detect
 from PIL import Image
