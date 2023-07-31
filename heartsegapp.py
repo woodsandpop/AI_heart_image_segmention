@@ -74,7 +74,7 @@ if __name__ == '__main__':
     
     main()
     
-@st.cache
+@st.cache_data
 def loadModel():
     start_dl = time.time()
     model_file = wget.download('https://archive.org/download/yoloTrained/yoloTrained.pt', out="models/")
