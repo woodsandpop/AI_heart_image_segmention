@@ -70,11 +70,10 @@ def main():
     src = st.sidebar.radio("Select input source.", ['From sample Images', 'Upload your own Image'])
     imageInput(src)
    
-if __name__ == '__main__':
-    
+if __name__ == '__main__':    
     main()
     
-@st.cache_data
+#@st.cache_data
 def loadModel():
     start_dl = time.time()
     model_file = wget.download('https://archive.org/download/yoloTrained/yoloTrained.pt', out="models/")
