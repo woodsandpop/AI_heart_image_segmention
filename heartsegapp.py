@@ -1,7 +1,7 @@
 import streamlit as st
-#from ultralytics import YOLO
+import ultralytics
 import torch
-#import detect
+import detect
 from PIL import Image
 from io import *
 import glob
