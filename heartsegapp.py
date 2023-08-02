@@ -1,6 +1,7 @@
 import streamlit as st
 import torch
-#import detect
+import libgl1
+import detect
 from PIL import Image
 from io import *
 import glob
