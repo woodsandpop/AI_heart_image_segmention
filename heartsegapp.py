@@ -78,6 +78,5 @@ def loadModel():
     start_dl = time.time()
     model_file = wget.download('https://archive.org/download/yoloTrained/yoloTrained.pt', out="models/")
     finished_dl = time.time()
-    print(f"Model Downloaded, ETA:{finished_dl-start_dl}")
-    
+    print(f"Model Downloaded, ETA:{finished_dl-start_dl}")    
 loadModel()
